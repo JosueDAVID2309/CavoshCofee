@@ -8,4 +8,27 @@
     <string name="perfil">Perfil</string>
     <string name="carrito">Carrito</string>
     <string name="comenzar">Comenzar</string>
+    <string name="correo">Correo</string>
+    <string name="registrar">Registrar</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="texto_header_login">¡Vamos a Iniciar Sesión!</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="password_recovery">Recuperar Contraseña</string>
+    <string name="register_with">O registrate con</string>
+    <string name="or_login_with">O Inicia Sesión usando</string>
+    <string name="content_description">Anything</string>
+    <string name="texto_apple">texto_apple</string>
+    <string name="texto_google_plus">texto_google_plus</string>
+    <string name="texto_facebook">texto_facebook</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
+    <string name="register_now">Registrarse Ahora</string>
+    <string name="nombres">Nombres</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="text_header_register">¡Vamos a registrarnos!</string>
+    <string name="tienes_una_cuenta">¿Tienes una cuenta?</string>
+    <string name="login_now">Iniciar Sesión</string>
+    <string name="buenos_dias">Buenos dias...</string>
+    <string name="cofee_title">Cavosh</string>
+    <string name="cambiar">Cambiar</string>
 </resources>
