@@ -40,6 +40,7 @@ public class Splash extends Fragment {
         context = getContext();
         navController = Navigation.findNavController( view );
 
+        //Añadir evento setOnclickListener
         binding.btnComenzar.setOnClickListener(v -> navController.navigate( R.id.navigation_login ));
     }
 
