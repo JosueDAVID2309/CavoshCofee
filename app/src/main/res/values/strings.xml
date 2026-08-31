@@ -31,4 +31,8 @@
     <string name="buenos_dias">Buenos dias...</string>
     <string name="cofee_title">Cavosh</string>
     <string name="cambiar">Cambiar</string>
+    <string name="currency_symbol">$</string>
+    <string name="default_product_name">Caramel\nMacchiato</string>
+    <string name="default_product_price">4.00</string>
+    <string name="add_to_cart">Agregar al carrito</string>
 </resources>
