@@ -32,6 +32,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_margin="20dp"
+        android:contentDescription="@string/content_description"
         android:background="@drawable/sh_btn_carmine_pink_2"
         android:elevation="1dp"
         android:src="@drawable/ic_favoritos_btn"
@@ -46,7 +47,7 @@
         android:contentDescription="@string/content_description"
         android:src="@drawable/coffee_cup"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:layout_editor_absoluteY="50dp" />
 
     <LinearLayout
         android:id="@+id/cuantityBtn"
@@ -99,7 +100,7 @@
         android:id="@+id/descriptionTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_marginStart="12dp"
         android:text="Our Caramel Macchiato is the perfect combination of a rich-tasting espresso, creamy milk and the sweet, buttery aroma of caramel."
         android:textStyle="normal"
         android:textSize="16dp"
@@ -133,10 +134,13 @@
         />
 
     <LinearLayout
+        android:id="@+id/lySizeCofee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp"
+        android:divider="@drawable/divider_space"
+        android:showDividers="middle"
         app:layout_constraintTop_toBottomOf="@id/txtTamaño"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +158,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Small"
+            android:text="Medium"
             android:background="@color/white"
             android:textColor="@color/black"
             android:textStyle="bold">
@@ -163,7 +167,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Small"
+            android:text="Large"
             android:background="@color/white"
             android:textColor="@color/black"
             android:textStyle="bold">
@@ -171,4 +175,211 @@
         </Button>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCustomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Personaliza tu cafe"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lySizeCofee"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/ibEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/sh_btn_carmine_pink_2"
+        android:padding="10dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toEndOf="@+id/lyOption"
+        app:layout_constraintTop_toBottomOf="@id/txtCustomize" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ibEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="28dp"/>
+
+    <LinearLayout
+        android:id="@+id/lyOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:divider="@drawable/divider_space"
+        android:showDividers="middle"
+        android:layout_margin="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txtCustomize"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/sh_btn_flesh_2"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="12dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_milk"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Milk"
+                android:textColor="#E64A19"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Oat"
+                android:textColor="#D84315"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/sh_btn_flesh_2"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="12dp"
+            >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_coffe_cream"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cream"
+                android:textColor="#E64A19"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="No"
+                android:textColor="#D84315"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/sh_btn_flesh_2"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="12dp"
+            >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_caffeine"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Caffeine"
+                android:textColor="#E64A19"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Yes"
+                android:textColor="#D84315"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyPriceFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lyOption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddCart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio Total"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/. "
+                android:textColor="@color/carmine_pink"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.70"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir a Carrito"
+        android:background="@drawable/sh_btn_gunmetal"
+        android:textColor="@color/flesh"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:padding="20dp"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@id/lyOption"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
