@@ -1,4 +1,4 @@
-package es.oaemdl.cavoshcafe2026;
+package es.oaemdl.cavoshcafe2026.ui;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import es.oaemdl.cavoshcafe2026.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragment_item_details#newInstance} factory method to
+ * Use the {@link Item_details#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_item_details extends Fragment {
+public class Item_details extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class fragment_item_details extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragment_item_details() {
+    public Item_details() {
         // Required empty public constructor
     }
 
@@ -37,8 +39,8 @@ public class fragment_item_details extends Fragment {
      * @return A new instance of fragment fragment_item_details.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_item_details newInstance(String param1, String param2) {
-        fragment_item_details fragment = new fragment_item_details();
+    public static Item_details newInstance(String param1, String param2) {
+        Item_details fragment = new Item_details();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
