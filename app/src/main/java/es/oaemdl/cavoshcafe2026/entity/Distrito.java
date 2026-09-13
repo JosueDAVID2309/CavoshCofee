@@ -1,4 +1,6 @@
-package es.oaemdl.cavoshcafe2026.entity;
+package es.oaemdl.cavoshcafe2026.model;
+
+import androidx.annotation.NonNull;
 
 public class Distrito {
     int id;
@@ -25,6 +27,7 @@ public class Distrito {
         Detalle = detalle;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return Detalle;

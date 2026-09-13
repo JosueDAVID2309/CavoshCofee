@@ -1,4 +1,5 @@
-package es.oaemdl.cavoshcafe2026.entity;
+package es.oaemdl.cavoshcafe2026.model;
+
 public class Producto {
     int id, Categoria, Nuevo;
     String Detalle, Descripcion;

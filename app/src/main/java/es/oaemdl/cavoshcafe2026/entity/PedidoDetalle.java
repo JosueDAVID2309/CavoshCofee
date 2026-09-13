@@ -1,4 +1,4 @@
-package es.oaemdl.cavoshcafe2026.entity;
+package es.oaemdl.cavoshcafe2026.model;
 
 public class PedidoDetalle {
     int idPedido, idProducto, Cantidad;

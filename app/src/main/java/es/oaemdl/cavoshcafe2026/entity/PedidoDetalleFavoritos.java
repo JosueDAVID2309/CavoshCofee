@@ -1,4 +1,4 @@
-package es.oaemdl.cavoshcafe2026.entity;
+package es.oaemdl.cavoshcafe2026.model;
 
 public class PedidoDetalleFavoritos {
     int idProducto, Size, Milk, Cream, Caffeine;
